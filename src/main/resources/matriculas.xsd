@@ -1,0 +1,78 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://fasttrack.com/web-services-soap"
+           targetNamespace="http://fasttrack.com/web-services-soap" elementFormDefault="qualified">
+
+    
+    <xs:element name="getAllMatriculasRequest" type="xs:anyType"/>
+
+    
+    <xs:element name="getAllMatriculasResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="matriculas" type="tns:matricula" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    
+    <xs:element name="getMateriasByEstudianteRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="idEstudiante" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    
+    <xs:element name="getMateriasByEstudianteResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="matriculas" type="tns:matricula" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+   
+    <xs:element name="getEstudiantesByMateriaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombreMateria" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    
+    <xs:element name="getEstudiantesByMateriaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="matriculas" type="tns:matricula" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    
+    <xs:complexType name="matricula">
+        <xs:sequence>
+            <xs:element name="estudiante" type="tns:estudiante"/>
+            <xs:element name="materia" type="tns:materia"/>
+        </xs:sequence>
+    </xs:complexType>
+
+   
+    <xs:complexType name="estudiante">
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="primerNombre" type="xs:string"/>
+            <xs:element name="primerApellido" type="xs:string"/>
+            <xs:element name="idPais" type="xs:long"/>
+            <xs:element name="correoElectronico" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    
+    <xs:complexType name="materia">
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="nombre" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
