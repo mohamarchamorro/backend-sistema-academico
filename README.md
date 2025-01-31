@@ -105,7 +105,7 @@ INSERT INTO paises (nombre, codigo_iso_2) VALUES
 ("BOLIVIA", "BO"),
 ("BRASIL", "BR"),
 ("ESTADOS UNIDOS", "US");
-
+```
 ---
 ## 🛠 4. Configurar el archivo `application.properties`
 
