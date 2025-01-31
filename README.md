@@ -6,16 +6,6 @@ La aplicación actúa como servidor REST y SOAP, manejando peticiones HTTP para 
 
 🔗 **http://localhost:8080/**
 
-### 📌 1. API REST
-Los servicios de la API REST están disponibles para realizar operaciones CRUD en el siguiente endpoint:  
-🔗 **http://localhost:8080/api/**
-
-### 📌 2. Servicios SOAP
-Los servicios SOAP están disponibles para consultas en la siguiente ruta:  
-🔗 **http://localhost:8080/ws**  
-Y el archivo WSDL asociado puede encontrarse en:  
-🔗 **http://localhost:8080/ws/matriculas.wsdl**
-
 ---
 
 ## 📥 1. Descarga del Proyecto
@@ -151,6 +141,9 @@ Para iniciar el backend, sigue estos pasos:
 
 ## 📌 Notas Adicionales
 
+- Los servicios de la API REST están disponibles para realizar operaciones CRUD en el siguiente endpoint: 🔗 **http://localhost:8080/api/**
+- Los servicios SOAP están disponibles para consultas en la siguiente ruta:  🔗 **http://localhost:8080/ws/**  
+- El archivo WSDL asociado puede encontrarse en: 🔗 **http://localhost:8080/ws/matriculas.wsdl**
 - Por defecto, MySQL corre en el puerto **3306**. Si usa otro puerto, modifique `spring.datasource.url`.
 - Asegúrese de que `DB_SISTEMA_ACADEMICO` coincida con el nombre de la base de datos creada.
 - **Si el backend se ejecuta en un puerto distinto al 8080**, agregue `server.port=PUERTO_NUEVO` y también ajuste el frontend para apuntar al nuevo puerto.
