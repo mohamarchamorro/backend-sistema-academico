@@ -6,6 +6,16 @@ La aplicación actúa como servidor REST y SOAP, manejando peticiones HTTP para 
 
 🔗 **http://localhost:8080/**
 
+### 📌 1. API REST
+Los servicios de la API REST están disponibles para realizar operaciones CRUD en el siguiente endpoint:  
+🔗 **http://localhost:8080/api/**
+
+### 📌 2. Servicios SOAP
+Los servicios SOAP están disponibles para consultas en la siguiente ruta:  
+🔗 **http://localhost:8080/ws**  
+Y el archivo WSDL asociado puede encontrarse en:  
+🔗 **http://localhost:8080/ws/matriculas.wsdl**
+
 ---
 
 ## 📥 1. Descarga del Proyecto
