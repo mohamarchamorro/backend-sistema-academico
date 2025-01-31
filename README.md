@@ -24,7 +24,7 @@ Puedes obtener el código fuente de dos maneras:
 
 ---
 
-## 🛠 2. Abrir el Proyecto
+## 🖥️ 2. Abrir el Proyecto
 
 
 ### 🔹 Opción 1: Spring Tools Suite (STS) o Eclipse
@@ -107,7 +107,7 @@ INSERT INTO paises (nombre, codigo_iso_2) VALUES
 ("ESTADOS UNIDOS", "US");
 
 ---
-## ⚙ 4 Configurar el archivo `application.properties`
+## 🛠 4. Configurar el archivo `application.properties`
 
 Configura la conexión a la base de datos en el archivo `application.properties` dentro de `src/main/resources/`.
 
@@ -119,7 +119,7 @@ spring.datasource.password=TU_PASSWORD_MYSQL
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 ```
-
+---
 
 ## 🚀 5. Ejecutar el Proyecto
 
@@ -153,4 +153,4 @@ Para cualquier consulta o problema, no dudes en crear un issue en el repositorio
 🚀 ¡Disfruta del desarrollo! 🎉
 
 📌 **Autor:** [Mohamar Chamorro](https://github.com/mohamarchamorro)\
-📌 **Repositorio:** [frontend-sistema-academico](https://github.com/mohamarchamorro/backend-sistema-academico)
+📌 **Repositorio:** [backend-sistema-academico](https://github.com/mohamarchamorro/backend-sistema-academico)
